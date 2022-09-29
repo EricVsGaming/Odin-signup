@@ -55,3 +55,37 @@ section {
     color: white;
     background-color: rgba(0, 0, 0, 50%);
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    gap: 20px;
+}
+
+label,
+input {
+    margin: 0 50px;
+}
+
+form > div {
+    position: relative;
+    margin: 10px 0;
+}
+
+label {
+    position: absolute;
+    top: -20px;
+}
+
+input {
+    outline: none;
+    padding: 7px 70px 7px 0;
+    border-radius: 3px;
+    border-color: #fff;
+}
+
+input:hover,
+input:active {
+    border-color: royalblue;
+}
