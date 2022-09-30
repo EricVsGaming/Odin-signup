@@ -19,7 +19,7 @@
             </div>
 
             <div class="bg-footer">
-                <p>Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a></p>
+                <p>Photo by <a href="https://unsplash.com/@aronvisuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aron Visuals</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
             </div>
         </div>
     </section>
@@ -39,7 +39,7 @@
         <div class="content-form">
             <h4>Let's do this!</h4>
 
-            <form action="#">
+            <form action="#" id="form">
                 <div class="form-name">
                     <label for="form-firstname">FIRST NAME</label>
                     <input type="text" id="form-firstname" placeholder="John" required>
@@ -58,16 +58,16 @@
 
                 <div class="form-pwd">
                     <label for="form-pwd">PASSWORD</label>
-                    <input type="text" id="form-pwd" required>
+                    <input type="password" id="form-pwd" class="error" minlength="8" maxlength="16" required>
 
                     <label for="form-confirmPwd">CONFIRM PASSWORD</label>
-                    <input type="text" id="form-confirmPwd" required>
+                    <input type="password" id="form-confirmPwd" class="error" minlength="8" maxlength="16" required>
                 </div>
             </form>
         </div>
 
         <div class="content-footer">
-            <button type="submit" class="btn">Create Account</button>
+            <input type="submit" form="form" value="Create Account" class="btn">
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </section>

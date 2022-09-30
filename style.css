@@ -1,3 +1,7 @@
+/*
+General purpose styling
+*/
+
 @font-face {
     font-family: "norse-bold";
     src: url(./assets/Norse-Bold.otf) format("opentype");
@@ -19,6 +23,33 @@ body {
 section {
     height: 100vh;
 }
+
+a {
+    color: rgb(3, 88, 0);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color:rgb(4, 121, 0);
+}
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(3, 88, 0);
+    border-radius: 8px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color:rgb(4, 121, 0);
+}
+
+/*
+Image section styling
+*/
 
 .bg-image {
     height: 100%;
@@ -56,16 +87,48 @@ section {
     background-color: rgba(0, 0, 0, 50%);
 }
 
+/*
+Content section styling
+*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-header {
+    padding: 0 50px;
+    font-size: 24px;
+}
+
+.content-header > h3 {
+    font-size: 22px;
+}
+
+.content-form {
+    padding: 0 50px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.content-form > h4 {
+    font-size: 24px;
+}
+
+.content-footer {
+    padding: 0 50px;
+}
+
+/*
+Form styling
+*/
+
 form {
     display: flex;
     flex-direction: column;
     margin: 25px 0;
     gap: 20px;
-}
-
-label,
-input {
-    margin: 0 50px;
 }
 
 form > div {
@@ -81,11 +144,16 @@ label {
 input {
     outline: none;
     padding: 7px 70px 7px 0;
+    margin: 0 70px 0 0;
     border-radius: 3px;
     border-color: #fff;
 }
 
-input:hover,
-input:active {
+form input:hover,
+form input:active {
     border-color: royalblue;
+}
+
+.error:invalid {
+    border-color: red;
 }
